@@ -10,5 +10,5 @@ class Register(models.Model):
     part_phone = models.CharField(max_length = 12) 
     # part_DOB = models.DateField(default=datetime.date.today)
 
-    def __str__(self):
-        return self.title
+    # def __str__(self):
+    #     return self.title
