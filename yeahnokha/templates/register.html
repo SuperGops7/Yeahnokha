@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registerations</title>
+</head>
+<body>
+    <form class="contact_form" method = "post" action = "/register_success/">
+
+      {% csrf_token %}
+        <div class="container">
+          <h1>Register</h1>
+          <hr>
+
+          <br>
+
+          <label for="part_name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Name" name="part_name" id="part_name" required>
+
+          <br>
+          <br>
+
+          <label for="part_inst"><b>Institute</b></label>
+          <input type="text" placeholder="Enter Institute Name" name="part_inst" id="part_inst" required>
+
+          <br>
+          <br>
+      
+          <label for="part_email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="part_email" id="part_email" required>
+      
+          <br>
+          <br>
+
+          <label for="part_phone"><b>Phone</b></label>
+          <input type="text" placeholder="Enter Phone No." name="part_phone" id="part_phone" required>
+          <br>
+          <br>
+          <hr>
+      
+          <button type="submit" class="registerbtn">Register</button>
+        </div>
+      
+      </form>
+</body>
+</html>

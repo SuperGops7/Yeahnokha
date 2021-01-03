@@ -16,6 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from events.views import events_view
+from register.views import register_success_view,register_view
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('', name = "home"),
+    path('events/', events_view, name = "Events"),
+    path('register/', register_view, name = "Register"),
+    path('register_success/', register_success_view, name = "Register"),
 ]
