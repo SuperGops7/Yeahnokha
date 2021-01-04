@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="G:/Tinkerhub/django/Yeahnokha/yeahnokha/yeahnokha/static/register.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <title>Registerations</title>
 </head>
 <body>
@@ -10,36 +13,38 @@
 
       {% csrf_token %}
         <div class="container">
-          <h1>Register</h1>
+          <figure class="text-center"><h1>Yeahnokha '21</h1></figure>
+          
           <hr>
 
           <br>
 
+          
+          
           <label for="part_name"><b>Name</b></label>
           <input type="text" placeholder="Enter Name" name="part_name" id="part_name" required>
-
-          <br>
           <br>
 
           <label for="part_inst"><b>Institute</b></label>
           <input type="text" placeholder="Enter Institute Name" name="part_inst" id="part_inst" required>
 
           <br>
-          <br>
+          
       
           <label for="part_email"><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="part_email" id="part_email" required>
       
           <br>
-          <br>
+          
 
           <label for="part_phone"><b>Phone</b></label>
           <input type="text" placeholder="Enter Phone No." name="part_phone" id="part_phone" required>
           <br>
-          <br>
+          
           <hr>
-      
+         <div class="div4button">
           <button type="submit" class="registerbtn">Register</button>
+        </div> 
         </div>
       
       </form>
